@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Jersey+25&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Giga:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Noto Sans", sans-serif;
+}
+body {
+  background-color: rgb(16, 17, 71);
+}
+.t1 {
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 2s ease-in forwards;
+  text-align: center;
+  padding-top: 10px;
+}
+.t2 {
+  color: blue;
+  text-align: center;
+  font-family: "Kanit", serif;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.t3 {
+  color: white;
+  font-size: 27px;
+  font-weight: 700;
+}
+.welcome-card {
+  margin-top: 20px;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-card img {
+  width: 200px;
+  animation: inimg 1s ease-in forwards;
+}
+.text-div-w p {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  animation: ptext 2s infinite;
+  font-size: 20px;
+}
+hr {
+  border: none;
+  height: 2px;
+  background-color: rgb(4, 0, 255);
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    margin-top: 10px;
+}
+.card1 a{
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.look-div{
+    text-align: right;
+    margin-top: 30px;
+}
+.look-div a{
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes inimg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ptext {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 425px) {
+  .t1 {
+    font-size: 28px;
+  }
+  .t2 {
+    font-size: 30px;
+  }
+  .t3 {
+    font-size: 23px;
+    font-weight: 700;
+    
+  }
+  .text-div-w p{
+    font-size: 17px;
+  }
+  .card1 a{
+    font-size: 23px;
+  }
+  .look-div a{
+    font-size: 14px;
+  }
+}
